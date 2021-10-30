@@ -6,6 +6,13 @@ authors = ["Edward Pasenidis <40323691+pasenidis@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+gTTS = "^2.2.3"
+moviepy = "^1.0.3"
+praw = "^7.4.0"
+google-api-python-client = "^2.27.0"
+google-auth-oauthlib = "^0.4.6"
+click = "^8.0.3"
+notify-py = "^0.3.3"
 
 [tool.poetry.dev-dependencies]
 

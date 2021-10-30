@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# MoviePy dist
+/tmp
+
+# Sound Files
+
+*.mp3
+
+# Google API
+client_secrets.json
