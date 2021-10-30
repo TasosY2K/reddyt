@@ -88,9 +88,6 @@ def compile(filename, intro, broll, background, limit, upload, title, descriptio
         add_text(result, start_time, t)
         start_time += t
 
-    b_roll_clip = VideoFileClip(
-        broll, audio=False).set_start(intro_clip.duration + 1).set_duration(start_time).crop(1920, 1080)  # .fl_image(blur)
-
     background_clip = AudioFileClip(background).set_start(
         intro_clip.duration + 1).fx(afx.volumex, 0.4)
 
