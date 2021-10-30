@@ -18,23 +18,6 @@ tracks = []
 ids = []
 
 
-def push(title, message):
-    plt = platform.system()
-
-    if plt == "Darwin":
-        command = f'''osascript -e 'display notification "{message} with title "{title}"'''
-
-    if plt == 'Linux':
-        command = f'''
-            notify-send "{title}" "{message}"
-        '''
-
-    else:
-        return
-
-    os.system(command)
-
-
 def generate_id(length):
     sequence = ascii_letters + digits
     s = ""
